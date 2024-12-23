@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="1.css">
+<style>
+body {
+  background-image:"img31.jpg";
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+a{
+text-decoration:none;
+}
+</style>
+<script>
+	function myval()
+	{
+		var uname=document.gform.email.value;
+		var pass=document.gform.pwd.value;
+		if(uname=="")
+		{
+			window.alert("Please enter Email or Phone Number");
+			document.gform.email.focus();
+			return false;
+		
+		}
+		if(pass=="")
+		{
+			window.alert("Please enter Your Password");
+			document.gform.pwd.focus();
+			return false;
+		
+		}
+		window.alert("Log in Sucessfull");
+		return true;
+	}
+
+</script>
+
+</head>
+
+
+
+<body background="img31.jpg">
+
+<table align="left" width="40%" height="90%" border="1px" cellpadding="10" cellspacing="0" bgcolor="lightyellow">
+<th>
+	<table align="center" width="5%" height="10%" border="0px" cellpadding="5" cellspacing="0">
+	
+		<th align="top" colspan="6" >
+		 <td><h1 style="color:DodgerBlue;">T</h1></td>
+		 <td><h1 style="color:red;">W</h1> </td>
+		 <td><h1 style="color:yellow;">I</h1></td>
+		 <td><h1 style="color:DodgerBlue;">T</h1></td>
+		 <td><h1 style="color:MediumSeaGreen;">T</h1></td>
+		 <td><h1 style="color:red;">E</h1></td>
+		 <td><h1 style="color:blue;">R</h1></td>
+		
+		</th>
+		
+		
+		 
+	
+		
+	</table>
+	
+
+
+		<table align="center" width="40%" height="70%" border="0px" cellpadding="20" cellspacing="0">
+		<th><h3 style="color:DodgerBlue;">Sign in</h3>
+		
+ 
+	<form action="" onsubmit="return myval()" name="gform">		
+		<label for="fname">with your twitter accont</label><br><br><br>
+			<input type="text" id="fname" name="email" placeholder="Email or phone"><br><br>
+		<label for="lname">Password</label><br><br>
+			<input type="password" id="lname" name="pwd" placeholder="Password"><br><br>
+  <input type="submit" class="btn1" placeholder="Log in">
+</form>
+		</th>
+		
+		</table>
+		</th>
+		</table>
+</body>

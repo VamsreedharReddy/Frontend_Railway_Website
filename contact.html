@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+<style>
+     :root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+.contact .row{
+    justify-content: center;
+    height:1000px;
+    width: 500px;
+    display: flex;
+    background:var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    justify-content: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:rgb(208, 55, 55);
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
+}
+
+.contact .row form .inputBox span{
+    color:rgb(92, 42, 42);
+    font-size: 2rem;
+    padding-left: 2rem;
+   
+}
+
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:rgb(108, 64, 64);
+    text-transform: none;
+    background:none;
+}
+
+    </style>
+</head>
+<body>
+    <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+     <!--   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107986.45821991914!2d80.54748365661997!3d17.009792859360928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35cb9f1c4b721b%3A0x9c597b093af850ee!2sLingala%2C%20Andhra%20Pradesh%20521403!5e0!3m2!1sen!2sin!4v1671370309189!5m2!1sen!2sin" allowfullscreen="" loading="lazy" ></iframe> -->
+
+        <form action="">
+            <h3>Get In Touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-message"></span>
+                <input type="TEXT" placeholder="Message">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+</body>
+</html>

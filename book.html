@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<title>Booking</title>
+<style>
+a{
+text-decoration:none;
+}
+</style>
+<script>
+	function myval()
+	{
+		var uname=document.gform.email.value;
+		var pass=document.gform.pwd.value;
+		if(uname=="")
+		{
+			window.alert("Please enter Email or Phone Number");
+			document.gform.email.focus();
+			return false;
+		
+		}
+		if(pass=="")
+		{
+			window.alert("Please enter Your Password");
+			document.gform.pwd.focus();
+			return false;
+		
+		window.alert("Log in Sucessfull");
+		return true;
+	}
+}
+
+</script>
+
+</head>
+
+
+
+<body background="img35.jpg" height="50%" width="50%">
+
+<table align="center" width="30%" height="100%" border="1px" cellpadding="10" cellspacing="0" bgcolor="LightSalmon">
+<th>
+	<table align="center" width="5%" height="10%" border="0px" cellpadding="5" cellspacing="0">
+	
+		<th align="top" colspan="6" >
+		 <td><h1 style="color:DodgerBlue;">B</h1></td>
+		 <td><h1 style="color:DodgerBlue;">O</h1> </td>
+		 <td><h1 style="color:DodgerBlue;">0</h1></td>
+		 <td><h1 style="color:DodgerBlue;">K</h1></td>
+		 <td><h1 style="color:DodgerBlue;">T</h1></td>
+		 <td><h1 style="color:DodgerBlue;">I</h1></td>
+		 <td><h1 style="color:DodgerBlue;">C</h1></td>
+		 <td><h1 style="color:DodgerBlue;">K</h1></td>
+		  <td><h1 style="color:DodgerBlue;">E</h1></td> 
+		  <td><h1 style="color:DodgerBlue;">T</h1></td>
+		
+		</th>
+		
+		
+		 
+	
+		
+	</table>
+	
+
+
+		<table align="center" width="40%" height="70%" border="0px" cellpadding="20" cellspacing="0">
+		<th><h3 style="color:green;">FROM</h3>
+		<input type="text" placeholder="from place"><br><br>
+		
+ 
+	<form action="" onsubmit="return myval()" name="gform">		
+		<label for="fname" style="color:green;">TO</label><br>
+			<input type="text" id="fname" name="email" placeholder="to place"><br><br>
+		<label for="lname" style="color:green;">DATE</label><br>
+			<input type="text" id="lname" name="pwd" placeholder="date"><br><br>
+			<label for="class" style="color:green;">ALL CLASSES</label><br>
+			<input type="text" placeholder="choose class"><br><br>
+			<label for="general" style="color:green;">GENERAL</label><br>
+			<input type="text" placeholder="general"><br><br>
+              <input type="search" class="btn1" placeholder="search train">
+    </form>
+		</th>
+		
+		</table>
+		</th>
+		</table>
+</body>
+</html>

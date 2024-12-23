@@ -1,0 +1,98 @@
+<html>
+
+	<head>
+	
+	<link rel="stylesheet" type="text/css" href="2.css">
+<style>
+body {
+  background-image:"img28.jpg";
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+a{
+color:white;
+text-decoration:none;
+}
+</style>
+<script>
+	function myvali()
+	{
+		var phn=document.fbform.phn.value;
+		var ps=document.fbform.ps.value;
+		if(phn=="")
+		{
+			window.alert("Please enter Email or Phone Number");
+			document.fbform.phn.focus();
+			return false;
+		
+		}
+		if(ps=="")
+		{
+			window.alert("Please enter Your Password");
+			document.fbform.ps.focus();
+			return false;
+		
+		}
+		window.alert("Log in Sucessfull");
+		return true;
+	}
+
+</script>
+	
+	</head>
+
+
+<body background="img28.jpg"  >
+
+<table align="center" width="40%" height="90%" border="1px" cellpadding="10" cellspacing="0" bgcolor="Ghostwhite">
+
+<th>
+	<table align="center" width="5%" height="10%" border="0px" cellpadding="5" cellspacing="0">
+	
+		<th align="top" colspan="6" >
+		 <td><h1 style="color:blue;">F</h1></td>
+		 <td><h1 style="color:blue;">a</h1> </td>
+		 <td><h1 style="color:blue;">c</h1></td>
+		 <td><h1 style="color:blue;">e</h1></td>
+		 <td><h1 style="color:blue;">b</h1></td>
+		 <td><h1 style="color:blue;">o</h1></td>
+		 <td><h1 style="color:blue;">o</h1></td><td><h1 style="color:blue;">k</h1></td>
+		
+		</th>
+		
+		
+		 
+	
+		
+	</table>
+	
+
+
+		<table align="center" width="40%" height="70%" border="0px" cellpadding="20" cellspacing="0">
+		<th><h3 style="color:blue;">Log in</h3>
+		
+ 
+	<form action="" onsubmit="return myvali()" name="fbform">		
+			<label for="fname">with your facebook account</label><br><br><br>
+				<input type="text"  name="phn" placeholder="Phone or email"><br><br>
+			<label for="lname">Password</label><br><br>
+			<input type="password"  name="ps" placeholder="Password"><br><br>
+			<input type="submit" class="btn1" value="Log In" >
+</form>
+		</th>
+		
+		</table >
+		</th>
+		<tr align="center">
+		<th>
+		<table cellspacing="10">
+		<tr>
+<th  align="right"><a href="https://www.facebook.com" target="_blank" >Create New Account </a></th>
+</tr>
+		</table>
+		</th>
+		</tr>
+		</table>
+</body>
+</html>

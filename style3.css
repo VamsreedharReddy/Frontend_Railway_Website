@@ -1,0 +1,36 @@
+#mid{
+			  
+    height: 10%;
+    width: 100%;
+   background-color:antiquewhite;
+    float:left;
+}
+ #mid ul{
+     display: flex;
+     justify-content: space-between;
+    }
+
+   #mid li{
+     
+     list-style-type: none;
+ } 
+  
+ #mid a{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    text-decoration: none;
+    margin:0 1rem;
+    font-size: 1.6rem;
+    box-shadow: 1px 1px 10px opx grey;
+     
+}
+
+ #mid a:hover{
+ color:aqua
+}
+img{
+    box-shadow: 1px 1px 10px 0px grey;
+}
+.container{
+    box-shadow: 1px 1px 10px 0px grey;
+}
